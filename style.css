@@ -16,6 +16,7 @@ width: 75px;
 height: 75px;
 position: relative;
 top: 225px;
+left: 50px;
 background-image: url("././img/dino.png");
 background-size: cover;
 }
@@ -34,4 +35,15 @@ background-size: cover;
 @keyframes moveRock {
     0% {left: 565px;}
     100% {left: -35px;}
+}
+
+.jump-animation {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0% {top: 225px;}
+    50% {top: 75px;}
+    75% {top: 75px;}
+    100% {top: 225px;}
 }
